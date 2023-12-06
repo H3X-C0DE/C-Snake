@@ -35,7 +35,6 @@
     <Content Include="Assets\DeathSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\mgs-ost.wav" />
     <Content Include="Assets\PointSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
