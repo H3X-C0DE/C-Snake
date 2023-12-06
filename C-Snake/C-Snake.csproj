@@ -6,17 +6,21 @@
     <RootNamespace>C_Snake</RootNamespace>
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Assets\Body.png" />
     <None Remove="Assets\DeadBody.png" />
     <None Remove="Assets\DeadHead.png" />
+    <None Remove="Assets\DeathSound.wav" />
     <None Remove="Assets\DroidSansMono.ttf" />
     <None Remove="Assets\Empty.png" />
     <None Remove="Assets\Food.png" />
     <None Remove="Assets\Head.png" />
     <None Remove="Assets\icon.ico" />
+    <None Remove="Assets\mgs-ost.wav" />
+    <None Remove="Assets\PointSound.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +32,14 @@
     <Resource Include="Assets\Food.png" />
     <Resource Include="Assets\Head.png" />
     <Resource Include="Assets\icon.ico" />
+    <Content Include="Assets\DeathSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mgs-ost.wav" />
+    <Content Include="Assets\PointSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon.ico" />
   </ItemGroup>
 
 </Project>

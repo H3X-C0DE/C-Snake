@@ -16,6 +16,7 @@ namespace C_Snake
         public int Score { get; private set; }
         public bool GameOver { get; private set; }
 
+
         private readonly LinkedList<Direction> dirChanges = new LinkedList<Direction>();
         private readonly LinkedList<Position> snakePositions = new LinkedList<Position>();
         private readonly Random random = new Random();
@@ -144,12 +145,15 @@ namespace C_Snake
                 dirChanges.RemoveFirst();
         
             }
+            Sounds soundManager = new Sounds();
 
             Position newHeadPos = HeadPosition().Translate(Dir);
             GridValue hit = WillHit(newHeadPos);
             if (hit == GridValue.Outside || hit == GridValue.Snake) 
             {
                 GameOver = true;
+                soundManager.PlayDeathSound();
+
             }
             else if  (hit == GridValue.Empty) 
             {
@@ -161,6 +165,7 @@ namespace C_Snake
                 AddHead(newHeadPos);
                 Score++;
                 AddFood();
+                soundManager.PlayPointSound();
             }
         }
     }
