@@ -12,5 +12,6 @@ Thanks to OttoBotCode for providing an outstanding tutorial. Through this tutori
 
 ## Screenshots
 ![App Screenshot](https://i.imgur.com/Qshn3cG.gif)
+
 Here you can see how the game functions
 
